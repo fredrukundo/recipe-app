@@ -4,7 +4,13 @@ import Link from "next/link";
 export default function RecipeDetailsItem({ getRecipeDetails }) {
     return (
         <div>
-            <Link href={"/recipe-list"}>Got to recipe list </Link>
+             <div className="pt-6 px-4 mx-auto">
+                <Link href="/recipe-list" >
+                <h2 className="inline-block px-4 py-2 bg-blue-500 text-sm text-white font-medium rounded-lg shadow-lg hover:bg-blue-600 transition-all duration-300">
+                    Back to recipe List
+                </h2>
+                </Link>
+                </div>
             <div className="p-6 lg:max-w-6xl max-w-2xl mx-auto">
                 <div className="grid items-start grid-cols-1 lg:grid-cols-2 gap-10">
                     <div className="w-full lg:sticky top-0 sm:flex gap-2">
